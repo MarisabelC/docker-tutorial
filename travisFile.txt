@@ -1,0 +1,572 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: e8669fd3-769a-4a02-b74c-3832e1700cf1@1.worker-org-5ff7998467-g9t49.gce-production-2
+version: v6.2.1 https://github.com/travis-ci/worker/tree/4e3246c044eb4915c2378ffacd0b3d3ed0136bba
+instance: travis-job-e63386d4-7d0f-4f78-abf3-d88babd9bfc2 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 6.362788646s
+travis_fold:end:worker_info[0Ktravis_time:start:2de1b37e[0Ktravis_time:end:2de1b37e:start=1568865065134709125,finish=1568865065342256586,duration=207547461,event=no_world_writable_dirs[0Ktravis_time:start:08611700[0Ktravis_time:end:08611700:start=1568865065349903086,finish=1568865065352407867,duration=2504781,event=check_unsupported[0Ktravis_time:start:198b8dd2[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: ruby
+Build group: stable
+Build dist: trusty
+Build id: 586833501
+Job id: 586833502
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: 24382795bc479c6eb9a0651f15dd00c2dca32750
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_time:end:198b8dd2:start=1568865065355371545,finish=1568865065367488734,duration=12117189,event=show_system_info[0Ktravis_time:start:0ae5a484[0Ktravis_time:end:0ae5a484:start=1568865065370651166,finish=1568865065399769285,duration=29118119,event=rm_riak_source[0Ktravis_time:start:165fa1de[0Ktravis_time:end:165fa1de:start=1568865065402790858,finish=1568865065412282729,duration=9491871,event=fix_rwky_redis[0Ktravis_time:start:2f426519[0Ktravis_time:end:2f426519:start=1568865065415283201,finish=1568865065807893676,duration=392610475,event=wait_for_network[0Ktravis_time:start:1c9becd8[0Ktravis_time:end:1c9becd8:start=1568865065811248557,finish=1568865066892081505,duration=1080832948,event=update_apt_keys[0Ktravis_time:start:01ccbe00[0Ktravis_time:end:01ccbe00:start=1568865066895394306,finish=1568865067994911422,duration=1099517116,event=fix_hhvm_source[0Ktravis_time:start:01bb00b8[0Ktravis_time:end:01bb00b8:start=1568865067998203995,finish=1568865068012872543,duration=14668548,event=update_mongo_arch[0Ktravis_time:start:24677bad[0Ktravis_time:end:24677bad:start=1568865068016445696,finish=1568865068069742333,duration=53296637,event=fix_sudo_enabled_trusty[0Ktravis_time:start:06923765[0Ktravis_time:end:06923765:start=1568865068072933583,finish=1568865068075197312,duration=2263729,event=update_glibc[0Ktravis_time:start:08663c10[0Ktravis_time:end:08663c10:start=1568865068078251148,finish=1568865068087060282,duration=8809134,event=clean_up_path[0Ktravis_time:start:0df29750[0Ktravis_time:end:0df29750:start=1568865068090200511,finish=1568865068098539937,duration=8339426,event=fix_resolv_conf[0Ktravis_time:start:0c07ef61[0Ktravis_time:end:0c07ef61:start=1568865068101552132,finish=1568865068110919679,duration=9367547,event=fix_etc_hosts[0Ktravis_time:start:095306e8[0Ktravis_time:end:095306e8:start=1568865068114073686,finish=1568865068132696633,duration=18622947,event=fix_mvn_settings_xml[0Ktravis_time:start:15e6f2ca[0Ktravis_time:end:15e6f2ca:start=1568865068135936987,finish=1568865068146293609,duration=10356622,event=no_ipv6_localhost[0Ktravis_time:start:0b145984[0Ktravis_time:end:0b145984:start=1568865068149698742,finish=1568865068152068484,duration=2369742,event=fix_etc_mavenrc[0Ktravis_time:start:0510cbfe[0Ktravis_time:end:0510cbfe:start=1568865068155063444,finish=1568865068158329855,duration=3266411,event=fix_wwdr_certificate[0Ktravis_time:start:0a07fd7e[0Ktravis_time:end:0a07fd7e:start=1568865068161365307,finish=1568865068188078536,duration=26713229,event=put_localhost_first[0Ktravis_time:start:21750003[0Ktravis_time:end:21750003:start=1568865068191163935,finish=1568865068198787280,duration=7623345,event=home_paths[0Ktravis_time:start:0d591e90[0Ktravis_time:end:0d591e90:start=1568865068202031784,finish=1568865068214591872,duration=12560088,event=disable_initramfs[0Ktravis_time:start:01d92de6[0Ktravis_time:end:01d92de6:start=1568865068217848825,finish=1568865068578949700,duration=361100875,event=disable_ssh_roaming[0Ktravis_time:start:12112046[0Ktravis_time:end:12112046:start=1568865068582615764,finish=1568865068585081887,duration=2466123,event=debug_tools[0Ktravis_time:start:1e20d912[0Ktravis_time:end:1e20d912:start=1568865068588243974,finish=1568865068591229568,duration=2985594,event=uninstall_oclint[0Ktravis_time:start:12dbf870[0Ktravis_time:end:12dbf870:start=1568865068594238025,finish=1568865068597295554,duration=3057529,event=rvm_use[0Ktravis_time:start:04d5c650[0Ktravis_time:end:04d5c650:start=1568865068600504026,finish=1568865068612857462,duration=12353436,event=rm_etc_boto_cfg[0Ktravis_time:start:04bdb792[0Ktravis_time:end:04bdb792:start=1568865068615996794,finish=1568865068618324254,duration=2327460,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0a6f5c2a[0Ktravis_time:end:0a6f5c2a:start=1568865068621333075,finish=1568865068684921881,duration=63588806,event=enable_i386[0Ktravis_time:start:21522c60[0Ktravis_time:end:21522c60:start=1568865068688842827,finish=1568865068697972512,duration=9129685,event=update_rubygems[0Ktravis_time:start:3b285dc2[0Ktravis_time:end:3b285dc2:start=1568865068701288076,finish=1568865069777901053,duration=1076612977,event=ensure_path_components[0Ktravis_time:start:112be616[0Ktravis_time:end:112be616:start=1568865069781292892,finish=1568865069783668647,duration=2375755,event=redefine_curl[0Ktravis_time:start:00e71ff8[0Ktravis_time:end:00e71ff8:start=1568865069786787441,finish=1568865069793497826,duration=6710385,event=nonblock_pipe[0Ktravis_time:start:1577bba2[0Ktravis_time:end:1577bba2:start=1568865069796641536,finish=1568865069872253308,duration=75611772,event=apt_get_update[0Ktravis_time:start:23c690a2[0Ktravis_time:end:23c690a2:start=1568865069875436519,finish=1568865069877628065,duration=2191546,event=deprecate_xcode_64[0Ktravis_time:start:2217225c[0Ktravis_time:end:2217225c:start=1568865069880573067,finish=1568865075309996317,duration=5429423250,event=update_heroku[0Ktravis_time:start:32805dda[0Ktravis_time:end:32805dda:start=1568865075313277514,finish=1568865075320183226,duration=6905712,event=shell_session_update[0Ktravis_time:start:0fe88dcf[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 3921
+travis_fold:end:docker_mtu[0Ktravis_time:end:0fe88dcf:start=1568865075323635176,finish=1568865076512440092,duration=1188804916,event=set_docker_mtu[0Ktravis_time:start:0ab7a2ff[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_time:end:0ab7a2ff:start=1568865076515438802,finish=1568865076581512619,duration=66073817,event=resolvconf[0Ktravis_time:start:045eeaf8[0Ktravis_time:end:045eeaf8:start=1568865076584650587,finish=1568865076778027798,duration=193377211,event=maven_central_mirror[0Ktravis_time:start:2c966484[0Ktravis_fold:start:services[0Ktravis_time:start:1295d960[0K$ sudo service docker start
+start: Job is already running: docker
+travis_time:end:1295d960:start=1568865076790880140,finish=1568865076804709907,duration=13829767,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:1295d960:start=1568865076790880140,finish=1568865079810775847,duration=3019895707,event=services[0Ktravis_time:start:2080d6b3[0Ktravis_time:end:2080d6b3:start=1568865079813866545,finish=1568865079816072837,duration=2206292,event=fix_ps4[0Ktravis_time:start:03eaa43f[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0e929510[0K$ git clone --depth=50 --branch=master https://github.com/MarisabelC/test.git MarisabelC/test
+Cloning into 'MarisabelC/test'...
+remote: Enumerating objects: 36, done.[K
+remote: Counting objects:   2% (1/36)[Kremote: Counting objects:   5% (2/36)[Kremote: Counting objects:   8% (3/36)[Kremote: Counting objects:  11% (4/36)[Kremote: Counting objects:  13% (5/36)[Kremote: Counting objects:  16% (6/36)[Kremote: Counting objects:  19% (7/36)[Kremote: Counting objects:  22% (8/36)[Kremote: Counting objects:  25% (9/36)[Kremote: Counting objects:  27% (10/36)[Kremote: Counting objects:  30% (11/36)[Kremote: Counting objects:  33% (12/36)[Kremote: Counting objects:  36% (13/36)[Kremote: Counting objects:  38% (14/36)[Kremote: Counting objects:  41% (15/36)[Kremote: Counting objects:  44% (16/36)[Kremote: Counting objects:  47% (17/36)[Kremote: Counting objects:  50% (18/36)[Kremote: Counting objects:  52% (19/36)[Kremote: Counting objects:  55% (20/36)[Kremote: Counting objects:  58% (21/36)[Kremote: Counting objects:  61% (22/36)[Kremote: Counting objects:  63% (23/36)[Kremote: Counting objects:  66% (24/36)[Kremote: Counting objects:  69% (25/36)[Kremote: Counting objects:  72% (26/36)[Kremote: Counting objects:  75% (27/36)[Kremote: Counting objects:  77% (28/36)[Kremote: Counting objects:  80% (29/36)[Kremote: Counting objects:  83% (30/36)[Kremote: Counting objects:  86% (31/36)[Kremote: Counting objects:  88% (32/36)[Kremote: Counting objects:  91% (33/36)[Kremote: Counting objects:  94% (34/36)[Kremote: Counting objects:  97% (35/36)[Kremote: Counting objects: 100% (36/36)[Kremote: Counting objects: 100% (36/36), done.[K
+remote: Compressing objects:   3% (1/26)[Kremote: Compressing objects:   7% (2/26)[Kremote: Compressing objects:  11% (3/26)[Kremote: Compressing objects:  15% (4/26)[Kremote: Compressing objects:  19% (5/26)[Kremote: Compressing objects:  23% (6/26)[Kremote: Compressing objects:  26% (7/26)[Kremote: Compressing objects:  30% (8/26)[Kremote: Compressing objects:  34% (9/26)[Kremote: Compressing objects:  38% (10/26)[Kremote: Compressing objects:  42% (11/26)[Kremote: Compressing objects:  46% (12/26)[Kremote: Compressing objects:  50% (13/26)[Kremote: Compressing objects:  53% (14/26)[Kremote: Compressing objects:  57% (15/26)[Kremote: Compressing objects:  61% (16/26)[Kremote: Compressing objects:  65% (17/26)[Kremote: Compressing objects:  69% (18/26)[Kremote: Compressing objects:  73% (19/26)[Kremote: Compressing objects:  76% (20/26)[Kremote: Compressing objects:  80% (21/26)[Kremote: Compressing objects:  84% (22/26)[Kremote: Compressing objects:  88% (23/26)[Kremote: Compressing objects:  92% (24/26)[Kremote: Compressing objects:  96% (25/26)[Kremote: Compressing objects: 100% (26/26)[Kremote: Compressing objects: 100% (26/26), done.[K
+remote: Total 36 (delta 17), reused 27 (delta 8), pack-reused 0[K
+Unpacking objects:   2% (1/36)   Unpacking objects:   5% (2/36)   Unpacking objects:   8% (3/36)   Unpacking objects:  11% (4/36)   Unpacking objects:  13% (5/36)   Unpacking objects:  16% (6/36)   Unpacking objects:  19% (7/36)   Unpacking objects:  22% (8/36)   Unpacking objects:  25% (9/36)   Unpacking objects:  27% (10/36)   Unpacking objects:  30% (11/36)   Unpacking objects:  33% (12/36)   Unpacking objects:  36% (13/36)   Unpacking objects:  38% (14/36)   Unpacking objects:  41% (15/36)   Unpacking objects:  44% (16/36)   Unpacking objects:  47% (17/36)   Unpacking objects:  50% (18/36)   Unpacking objects:  52% (19/36)   Unpacking objects:  55% (20/36)   Unpacking objects:  58% (21/36)   Unpacking objects:  61% (22/36)   Unpacking objects:  63% (23/36)   Unpacking objects:  66% (24/36)   Unpacking objects:  69% (25/36)   Unpacking objects:  72% (26/36)   Unpacking objects:  75% (27/36)   Unpacking objects:  77% (28/36)   Unpacking objects:  80% (29/36)   Unpacking objects:  83% (30/36)   Unpacking objects:  86% (31/36)   Unpacking objects:  88% (32/36)   Unpacking objects:  91% (33/36)   Unpacking objects:  94% (34/36)   Unpacking objects:  97% (35/36)   Unpacking objects: 100% (36/36)   Unpacking objects: 100% (36/36), done.
+travis_time:end:0e929510:start=1568865079832562393,finish=1568865080366561691,duration=533999298,event=checkout[0K$ cd MarisabelC/test
+$ git checkout -qf ee2ce57936c64a6f43accbe4eb5bcbe0946aea18
+travis_fold:end:git.checkout[0K
+travis_time:end:0e929510:start=1568865079832562393,finish=1568865080378659206,duration=546096813,event=checkout[0Ktravis_time:start:0ca3b480[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export dockerPass=*****
+$ export dockerUserName=*****
+
+travis_time:end:0ca3b480:start=1568865080385946063,finish=1568865080392986063,duration=7040000,event=env[0Ktravis_fold:start:rvm[0Ktravis_time:start:15eeec72[0K$ rvm use default
+[32mUsing /home/travis/.rvm/gems/ruby-2.4.1[0m
+
+[32;1m** Updating RubyGems to the latest compatible version for security reasons. **[0m
+[32;1m** If you need an older version, you can downgrade with 'gem update --system OLD_VERSION'. **[0m
+
+travis_time:end:15eeec72:start=1568865080426538244,finish=1568865084634271559,duration=4207733315,event=setup[0Ktravis_fold:end:rvm[0K
+travis_fold:start:ruby.versions[0K$ ruby --version
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+$ rvm --version
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+$ bundle --version
+Bundler version 1.17.3
+$ gem --version
+3.0.6
+travis_fold:end:ruby.versions[0K
+No Gemfile found, skipping bundle install
+
+travis_time:start:0170d6f8[0K$ docker build -t marisabelc/node .
+Sending build context to Docker daemon  108.5kB
+Step 1/9 : FROM node
+latest: Pulling from library/node
+
+[1A[1K[K092586df9206: Pulling fs layer [1B
+[1A[1K[Kef599477fae0: Pulling fs layer [1B
+[1A[1K[K4530c6472b5d: Pulling fs layer [1B
+[1A[1K[Kd34d61487075: Pulling fs layer [1B
+[1A[1K[K87fc2710b63f: Pulling fs layer [1B
+[1A[1K[Ke83c771c5387: Pulling fs layer [1B
+[1A[1K[Kc28bd271641e: Pulling fs layer [1B
+[1A[1K[K5137e6957710: Pulling fs layer [1B
+[1A[1K[K1d8bcbc41a69: Pulling fs layer [1B[6A[1K[Kd34d61487075: Waiting [6B[5A[1K[K87fc2710b63f: Waiting [5B[4A[1K[Ke83c771c5387: Waiting [4B[3A[1K[Kc28bd271641e: Waiting [3B[2A[1K[K5137e6957710: Waiting [2B[1A[1K[K1d8bcbc41a69: Waiting [1B[8A[1K[Kef599477fae0: Downloading  109.6kB/10.79MB[8B[7A[1K[K4530c6472b5d: Downloading   44.2kB/4.34MB[7B[9A[1K[K092586df9206: Downloading  457.9kB/45.38MB[9B[8A[1K[Kef599477fae0: Downloading  6.581MB/10.79MB[8B[7A[1K[K4530c6472b5d: Verifying Checksum [7B[7A[1K[K4530c6472b5d: Download complete [7B[9A[1K[K092586df9206: Downloading  7.347MB/45.38MB[9B[8A[1K[Kef599477fae0: Verifying Checksum [8B[8A[1K[Kef599477fae0: Download complete [8B[9A[1K[K092586df9206: Downloading  19.78MB/45.38MB[9B[9A[1K[K092586df9206: Downloading  30.81MB/45.38MB[9B[9A[1K[K092586df9206: Downloading  41.82MB/45.38MB[9B[6A[1K[Kd34d61487075: Downloading  514.8kB/50.07MB[6B[9A[1K[K092586df9206: Verifying Checksum [9B[9A[1K[K092586df9206: Download complete [9B[9A[1K[K092586df9206: Extracting  458.8kB/45.38MB[9B[6A[1K[Kd34d61487075: Downloading  8.678MB/50.07MB[6B[5A[1K[K87fc2710b63f: Downloading  539.4kB/214.8MB[5B[9A[1K[K092586df9206: Extracting  1.835MB/45.38MB[9B[6A[1K[Kd34d61487075: Downloading  18.83MB/50.07MB[6B[5A[1K[K87fc2710b63f: Downloading  3.747MB/214.8MB[5B[6A[1K[Kd34d61487075: Downloading  25.46MB/50.07MB[6B[9A[1K[K092586df9206: Extracting  2.753MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  11.78MB/214.8MB[5B[6A[1K[Kd34d61487075: Downloading  31.07MB/50.07MB[6B[9A[1K[K092586df9206: Extracting   3.67MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  18.73MB/214.8MB[5B[4A[1K[Ke83c771c5387: Downloading     487B/4.165kB[4B[4A[1K[Ke83c771c5387: Downloading  4.165kB/4.165kB[4B[4A[1K[Ke83c771c5387: Verifying Checksum [4B[4A[1K[Ke83c771c5387: Download complete [4B[6A[1K[Kd34d61487075: Downloading   38.2MB/50.07MB[6B[9A[1K[K092586df9206: Extracting  5.046MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  25.14MB/214.8MB[5B[6A[1K[Kd34d61487075: Downloading  46.33MB/50.07MB[6B[5A[1K[K87fc2710b63f: Downloading  31.04MB/214.8MB[5B[9A[1K[K092586df9206: Extracting  6.881MB/45.38MB[9B[6A[1K[Kd34d61487075: Verifying Checksum [6B[6A[1K[Kd34d61487075: Download complete [6B[5A[1K[K87fc2710b63f: Downloading  40.68MB/214.8MB[5B[9A[1K[K092586df9206: Extracting  8.258MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading   50.8MB/214.8MB[5B[9A[1K[K092586df9206: Extracting  9.634MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  56.69MB/214.8MB[5B[9A[1K[K092586df9206: Extracting  11.01MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  65.26MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  228.5kB/22.07MB[3B[9A[1K[K092586df9206: Extracting  11.93MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  72.76MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  682.7kB/22.07MB[3B[2A[1K[K5137e6957710: Downloading  14.17kB/1.399MB[2B[9A[1K[K092586df9206: Extracting   13.3MB/45.38MB[9B[2A[1K[K5137e6957710: Downloading  1.399MB/1.399MB[2B[2A[1K[K5137e6957710: Verifying Checksum [2B[2A[1K[K5137e6957710: Download complete [2B[5A[1K[K87fc2710b63f: Downloading  80.24MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  1.826MB/22.07MB[3B[9A[1K[K092586df9206: Extracting  14.68MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  89.85MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  2.743MB/22.07MB[3B[9A[1K[K092586df9206: Extracting   15.6MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  98.39MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  3.874MB/22.07MB[3B[9A[1K[K092586df9206: Extracting  16.97MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading    108MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  5.242MB/22.07MB[3B[9A[1K[K092586df9206: Extracting  17.89MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  114.5MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  7.068MB/22.07MB[3B[1A[1K[K1d8bcbc41a69: Downloading     294B/294B[1B[1A[1K[K1d8bcbc41a69: Verifying Checksum [1B[1A[1K[K1d8bcbc41a69: Download complete [1B[9A[1K[K092586df9206: Extracting  19.73MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading    123MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  9.125MB/22.07MB[3B[5A[1K[K87fc2710b63f: Downloading    130MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  11.62MB/22.07MB[3B[5A[1K[K87fc2710b63f: Downloading  137.4MB/214.8MB[5B[9A[1K[K092586df9206: Extracting   21.1MB/45.38MB[9B[3A[1K[Kc28bd271641e: Downloading  14.15MB/22.07MB[3B[5A[1K[K87fc2710b63f: Downloading  142.8MB/214.8MB[5B[9A[1K[K092586df9206: Extracting  22.02MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  150.8MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  17.82MB/22.07MB[3B[9A[1K[K092586df9206: Extracting  26.15MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  157.8MB/214.8MB[5B[3A[1K[Kc28bd271641e: Downloading  21.49MB/22.07MB[3B[9A[1K[K092586df9206: Extracting   28.9MB/45.38MB[9B[3A[1K[Kc28bd271641e: Verifying Checksum [3B[3A[1K[Kc28bd271641e: Download complete [3B[5A[1K[K87fc2710b63f: Downloading  166.3MB/214.8MB[5B[9A[1K[K092586df9206: Extracting   31.2MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  177.6MB/214.8MB[5B[9A[1K[K092586df9206: Extracting  32.57MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  188.3MB/214.8MB[5B[5A[1K[K87fc2710b63f: Downloading  198.5MB/214.8MB[5B[9A[1K[K092586df9206: Extracting  33.95MB/45.38MB[9B[5A[1K[K87fc2710b63f: Downloading  208.7MB/214.8MB[5B[9A[1K[K092586df9206: Extracting  35.32MB/45.38MB[9B[5A[1K[K87fc2710b63f: Verifying Checksum [5B[5A[1K[K87fc2710b63f: Download complete [5B[9A[1K[K092586df9206: Extracting  37.16MB/45.38MB[9B[9A[1K[K092586df9206: Extracting  38.99MB/45.38MB[9B[9A[1K[K092586df9206: Extracting  40.83MB/45.38MB[9B[9A[1K[K092586df9206: Extracting  42.66MB/45.38MB[9B[9A[1K[K092586df9206: Extracting  44.04MB/45.38MB[9B[9A[1K[K092586df9206: Extracting   44.5MB/45.38MB[9B[9A[1K[K092586df9206: Extracting  45.38MB/45.38MB[9B[9A[1K[K092586df9206: Pull complete [9B[8A[1K[Kef599477fae0: Extracting  131.1kB/10.79MB[8B[8A[1K[Kef599477fae0: Extracting  2.359MB/10.79MB[8B[8A[1K[Kef599477fae0: Extracting   4.85MB/10.79MB[8B[8A[1K[Kef599477fae0: Extracting  6.816MB/10.79MB[8B[8A[1K[Kef599477fae0: Extracting  9.306MB/10.79MB[8B[8A[1K[Kef599477fae0: Extracting  10.75MB/10.79MB[8B[8A[1K[Kef599477fae0: Extracting  10.79MB/10.79MB[8B[8A[1K[Kef599477fae0: Pull complete [8B[7A[1K[K4530c6472b5d: Extracting  65.54kB/4.34MB[7B[7A[1K[K4530c6472b5d: Extracting  1.704MB/4.34MB[7B[7A[1K[K4530c6472b5d: Extracting  4.325MB/4.34MB[7B[7A[1K[K4530c6472b5d: Extracting   4.34MB/4.34MB[7B[7A[1K[K4530c6472b5d: Pull complete [7B[6A[1K[Kd34d61487075: Extracting  524.3kB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  3.146MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  5.767MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  7.864MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  10.49MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  13.11MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  15.73MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting   17.3MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  18.87MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  20.45MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  22.02MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  23.59MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  24.64MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  25.69MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  27.26MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  29.36MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  31.46MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  33.03MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  35.13MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting   36.7MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  39.85MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  41.42MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  43.52MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  45.61MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  47.19MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  48.76MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  49.81MB/50.07MB[6B[6A[1K[Kd34d61487075: Extracting  50.07MB/50.07MB[6B[6A[1K[Kd34d61487075: Pull complete [6B[5A[1K[K87fc2710b63f: Extracting  557.1kB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  2.785MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  5.014MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  7.242MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting   9.47MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  10.03MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  11.14MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  12.26MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  13.37MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  14.48MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting   15.6MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  16.71MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  18.94MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  21.73MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  23.95MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  26.18MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  28.97MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting   31.2MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  33.42MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  35.09MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  38.44MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  40.11MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  42.34MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  45.12MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  47.35MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  49.02MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  50.69MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  52.36MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  53.48MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  55.15MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  56.82MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  58.49MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  60.72MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  62.95MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  65.18MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting   67.4MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  69.63MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  71.86MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  74.09MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  76.32MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  78.54MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  80.77MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting     83MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  85.79MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  88.01MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting   90.8MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  93.59MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  95.81MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  98.04MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  100.8MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  103.6MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  105.8MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  108.1MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  110.3MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  112.5MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  114.8MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting    117MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  119.2MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  121.4MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  123.7MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  125.9MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  128.1MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  130.4MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  132.6MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  134.8MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting    137MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  139.3MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  140.4MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  142.6MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  147.6MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting    151MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  153.7MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  157.6MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  165.4MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  171.6MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  176.6MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  179.9MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  182.7MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  184.4MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  184.9MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  187.2MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  190.5MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  192.7MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  193.9MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  195.5MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  197.2MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  199.4MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  201.1MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  203.3MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting    205MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  206.7MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  208.9MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  211.1MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  212.2MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  212.8MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  213.4MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  214.5MB/214.8MB[5B[5A[1K[K87fc2710b63f: Extracting  214.8MB/214.8MB[5B[5A[1K[K87fc2710b63f: Pull complete [5B[4A[1K[Ke83c771c5387: Extracting  4.165kB/4.165kB[4B[4A[1K[Ke83c771c5387: Extracting  4.165kB/4.165kB[4B[4A[1K[Ke83c771c5387: Pull complete [4B[3A[1K[Kc28bd271641e: Extracting  229.4kB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  2.523MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  4.817MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  7.111MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  9.634MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting   11.7MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  13.99MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  15.83MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  16.97MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  17.89MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  18.81MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  19.27MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  19.96MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  20.87MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  21.56MB/22.07MB[3B[3A[1K[Kc28bd271641e: Extracting  22.07MB/22.07MB[3B[3A[1K[Kc28bd271641e: Pull complete [3B[2A[1K[K5137e6957710: Extracting  32.77kB/1.399MB[2B[2A[1K[K5137e6957710: Extracting  1.114MB/1.399MB[2B[2A[1K[K5137e6957710: Extracting  1.399MB/1.399MB[2B[2A[1K[K5137e6957710: Extracting  1.399MB/1.399MB[2B[2A[1K[K5137e6957710: Pull complete [2B[1A[1K[K1d8bcbc41a69: Extracting     294B/294B[1B[1A[1K[K1d8bcbc41a69: Extracting     294B/294B[1B[1A[1K[K1d8bcbc41a69: Pull complete [1BDigest: sha256:cda22332e2dd46807a14d3268ee3fb298651386ad1f03cfd58772a7dc65f89c7
+Status: Downloaded newer image for node:latest
+ ---> d8c33ae35f44
+Step 2/9 : RUN mkdir usr/src/app
+ ---> Running in 2e1b24c49afe
+ ---> 6a8f834774cc
+Removing intermediate container 2e1b24c49afe
+Step 3/9 : WORKDIR /usr/src/app
+ ---> d92a2402eddd
+Removing intermediate container 8a8f943844de
+Step 4/9 : ENV PATH /usr/src/app/node_modules/.bin:$PATH
+ ---> Running in 2caf6ffd804d
+ ---> af0cf1004e09
+Removing intermediate container 2caf6ffd804d
+Step 5/9 : COPY package*.json /usr/src/app
+ ---> 545bb95690ac
+Step 6/9 : RUN npm install
+ ---> Running in 1c134753d1b0
+
+> core-js@2.6.9 postinstall /usr/src/app/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> nodemon@1.19.2 postinstall /usr/src/app/node_modules/nodemon
+> node bin/postinstall || exit 0
+
+[32mLove nodemon? You can now support the project via the open collective:[22m[39m
+ > [96m[1mhttps://opencollective.com/nodemon/donate[0m
+
+[91mnpm [0m[91mnotice created a lockfile as package-lock.json. You should commit this file.
+[0m[91mnpm[0m[91m WARN[0m[91m optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+[0m[91mnpm WARN[0m[91m notsup[0m[91m SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m[91m
+[0madded 437 packages from 187 contributors and audited 6555 packages in 12.878s
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+ ---> 180f283432ea
+Removing intermediate container 1c134753d1b0
+Step 7/9 : COPY . /usr/src/app
+ ---> 91ac74bf0af9
+Step 8/9 : EXPOSE 4000
+ ---> Running in fd67e21b4f2a
+ ---> e6405a3cfc2a
+Removing intermediate container fd67e21b4f2a
+Step 9/9 : CMD npm start
+ ---> Running in 1ec99b36ccd9
+ ---> 633337f14e5f
+Removing intermediate container 1ec99b36ccd9
+Successfully built 633337f14e5f
+Successfully tagged marisabelc/node:latest
+travis_time:end:0170d6f8:start=1568865085128054435,finish=1568865127316564702,duration=42188510267,event=script[0K[32;1mThe command "docker build -t marisabelc/node ." exited with 0.[0m
+travis_time:start:021364bc[0K$ docker images marisabelc/node
+REPOSITORY          TAG                 IMAGE ID            CREATED                  SIZE
+marisabelc/node     latest              633337f14e5f        Less than a second ago   936MB
+travis_time:end:021364bc:start=1568865127325881032,finish=1568865127349650878,duration=23769846,event=script[0K[32;1mThe command "docker images marisabelc/node" exited with 0.[0m
+
+travis_fold:start:before_deploy[0Ktravis_time:start:1e6a1763[0K$ docker login -u $dockerUserName -p $dockerPass
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+Login Succeeded
+travis_time:end:1e6a1763:start=1568865127379439733,finish=1568865127846229913,duration=466790180,event=after_success[0Ktravis_fold:end:before_deploy[0Ktravis_fold:start:dpl_0[0Ktravis_time:start:0dbed98d[0K$ rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
+Fetching dpl-1.10.12.gem
+Successfully installed dpl-1.10.12
+Parsing documentation for dpl-1.10.12
+Installing ri documentation for dpl-1.10.12
+Done installing documentation for dpl after 0 seconds
+1 gem installed
+travis_time:end:0dbed98d:start=1568865128935412210,finish=1568865130623276360,duration=1687864150,event=after_success[0Ktravis_fold:end:dpl_0[0Ktravis_time:start:25fb1a85[0Ktravis_fold:start:dpl.1[33mInstalling deploy dependencies[0m
+Fetching dpl-script-1.10.12.gem
+Successfully installed dpl-script-1.10.12
+Parsing documentation for dpl-script-1.10.12
+Installing ri documentation for dpl-script-1.10.12
+Done installing documentation for dpl-script after 0 seconds
+1 gem installed
+
+travis_fold:end:dpl.1travis_fold:start:dpl.2[33mPreparing deploy[0m
+Cleaning up git repository with `git stash --all`. If you need build artifacts for deployment, set `deploy.skip_cleanup: true`. See https://docs.travis-ci.com/user/deployment#Uploading-Files-and-skip_cleanup.
+No local changes to save
+
+travis_fold:end:dpl.2travis_fold:start:dpl.3[33mDeploying application[0m
+The push refers to a repository [docker.io/marisabelc/node]
+
+[1A[1K[K62986a1c5cea: Preparing [1B
+[1A[1K[K5e4f02ddeb9a: Preparing [1B
+[1A[1K[Kc2d5a4895808: Preparing [1B
+[1A[1K[K3399906f787e: Preparing [1B
+[1A[1K[Kff88a6b0c676: Preparing [1B
+[1A[1K[K99edc82a9595: Preparing [1B
+[1A[1K[K3bc36b22af5d: Preparing [1B
+[1A[1K[K72be3b1da83c: Preparing [1B
+[1A[1K[K409170aec809: Preparing [1B
+[1A[1K[K2e669e0134f5: Preparing [1B
+[1A[1K[K8bacec4e3446: Preparing [1B
+[1A[1K[K26b1991f37bd: Preparing [1B
+[1A[1K[K55e6b89812f3: Preparing [1B[8A[1K[K99edc82a9595: Waiting [8B[7A[1K[K3bc36b22af5d: Waiting [7B[6A[1K[K72be3b1da83c: Waiting [6B[5A[1K[K409170aec809: Waiting [5B[4A[1K[K2e669e0134f5: Waiting [4B[3A[1K[K8bacec4e3446: Waiting [3B[2A[1K[K26b1991f37bd: Waiting [2B[1A[1K[K55e6b89812f3: Waiting [1B[13A[1K[K62986a1c5cea: Pushing     512B/26.56kB[13B[13A[1K[K62986a1c5cea: Pushing  110.1kB[13B[11A[1K[Kc2d5a4895808: Pushing     512B/512B[11B[11A[1K[Kc2d5a4895808: Pushing  1.024kB[11B[11A[1K[Kc2d5a4895808: Pushing  3.584kB[11B[9A[1K[Kff88a6b0c676: Layer already exists [9B[10A[1K[K3399906f787e: Pushing   2.56kB[10B[12A[1K[K5e4f02ddeb9a: Pushing  303.6kB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  1.462MB/28.87MB[12B[8A[1K[K99edc82a9595: Layer already exists [8B[12A[1K[K5e4f02ddeb9a: Pushing   3.83MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  5.584MB/28.87MB[12B[7A[1K[K3bc36b22af5d: Layer already exists [7B[12A[1K[K5e4f02ddeb9a: Pushing  7.966MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  10.32MB/28.87MB[12B[6A[1K[K72be3b1da83c: Layer already exists [6B[12A[1K[K5e4f02ddeb9a: Pushing  12.41MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  13.86MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  15.01MB/28.87MB[12B[5A[1K[K409170aec809: Layer already exists [5B[12A[1K[K5e4f02ddeb9a: Pushing  16.17MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  17.62MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  19.11MB/28.87MB[12B[4A[1K[K2e669e0134f5: Layer already exists [4B[12A[1K[K5e4f02ddeb9a: Pushing  20.59MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  21.75MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  22.33MB/28.87MB[12B[3A[1K[K8bacec4e3446: Layer already exists [3B[12A[1K[K5e4f02ddeb9a: Pushing  23.51MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  24.99MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  25.86MB/28.87MB[12B[2A[1K[K26b1991f37bd: Layer already exists [2B[12A[1K[K5e4f02ddeb9a: Pushing  27.32MB/28.87MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  28.78MB/28.87MB[12B[1A[1K[K55e6b89812f3: Layer already exists [1B[12A[1K[K5e4f02ddeb9a: Pushing  29.93MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  31.44MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  33.22MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  34.96MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  36.72MB[12B[12A[1K[K5e4f02ddeb9a: Pushing  37.54MB[12B[11A[1K[Kc2d5a4895808: Pushed [11B[10A[1K[K3399906f787e: Pushed [10B[13A[1K[K62986a1c5cea: Pushed [13B[12A[1K[K5e4f02ddeb9a: Pushed [12Blatest: digest: sha256:3d6dc1bacdc2d05cec6f00d29040ffbad104f95211512283376f35d1e76df9aa size: 3050
+
+travis_fold:end:dpl.3No stash entries found.
+travis_time:end:25fb1a85:start=1568865130642154905,finish=1568865140394114629,duration=9751959724,event=after_success[0K
+Done. Your build exited with 0.
